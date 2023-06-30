@@ -48,3 +48,21 @@ String.prototype.toJadenCase = function () {
 ```
 
 *****
+
+### Experience
+
+I have experience working with popular CMS in the field of SEO website promotion, layout design, improvements to the website functionality.
+
+*****
+
+### Education
+
++ **Tambov state technical university**\
+computer science-economist, specialty "Applied computer science in economics"
++ **APTECH-TambovSTU**\
+Elementary Programming in C, Building Dynamic Websites, Designing Web Sites in Dreamweaver, RDBMS and Data Management, Working with SQL Server Database Objects, Project (Dreamweaver).
+
+*****
+
+### English
+A1
