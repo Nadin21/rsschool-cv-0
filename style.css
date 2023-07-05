@@ -10,15 +10,58 @@ body{
     grid-template-areas: 
     "img nav nav"
     "img h1 h1";
+    padding-top: 20px;
 }
 .head .avatar{
     grid-area: img;
 }
 .head .head_nav{
     grid-area: nav;
+    position: relative;
 }
 .head h1{
     grid-area: h1;
+}
+.avatar .img_avatar{
+    max-width: 194px;
+    border: 5px solid #e77422;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+nav ul.nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: calc(100% + 170px);
+    padding: 10px;
+    background: #db631c;
+    border-radius: 50px;
+    position: absolute;
+    left: -170px;
+    z-index: 1;
+}
+nav ul.nav li{
+    list-style: none;
+    display: inline;
+}
+nav ul.nav li a{
+    text-decoration: none;
+    color:#fff;
+}
+.head h1{
+    padding:10px;
+    font-size: 24px;
+    color:#fff;
+    background-color: #db631c;
+    border-radius: 50px;
+    position: relative;
+    left: -77px;
+    text-align: center;
 }
 .info_container{
     display: flex;
