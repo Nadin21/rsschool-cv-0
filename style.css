@@ -1,4 +1,33 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .body_container{
     max-width: 1000px;
     margin: 0 auto;
 }
+.head {
+    display: grid;
+    grid-template-areas: 
+    "img nav nav"
+    "img h1 h1";
+}
+.head .avatar{
+    grid-area: img;
+}
+.head .head_nav{
+    grid-area: nav;
+}
+.head h1{
+    grid-area: h1;
+}
+.info_container{
+    display: flex;
+}
+.info_container aside{
+    width:30%;
+    
+}
+.info_container main{
+    width: 70%;
+}
+
