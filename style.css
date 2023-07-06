@@ -94,5 +94,46 @@ nav ul.nav li a{
     position: relative;
     left: -22px;
 }
+.left_column .list_contacts{
+    list-style: none;
+    padding-left: 0;
+}
+.list_contacts li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    color:#d14e00;
+}
+.list_contacts li a{
+    color: #933700;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.list_contacts li a:after {
+    display: block;
+    content: "";
+    background-color:#d14e00;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.list_contacts li a:hover:after,
+.list_contacts li a:focus:after {
+    width: 100%;
+}
+.list_contacts .fa {
+    color:#f26f21;
+    font-size: 24px;
+}
+
  
 
