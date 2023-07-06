@@ -258,6 +258,11 @@ nav ul.nav li a:focus:after {
     padding: 10px 10px 10px 20px;
     background: #ffcca8;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.code_content pre{
+    overflow: auto;
 }
 
 .list_education {
