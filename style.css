@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .body_container {
@@ -13,10 +14,16 @@ body {
         "img nav nav nav"
         "img h1 h1 h1";
     padding-top: 20px;
+    border-right: 2px solid #ffcca8;
+    border-image: linear-gradient(to bottom, #ffffff 26%, #f26f21 68%);
+    border-image-slice: 1;
 }
 
 .head .avatar {
     grid-area: img;
+    border-left: 2px solid #ffcca8;
+    border-image: linear-gradient(to bottom, #ffffff 34%, #fdf8f4 50%);
+    border-image-slice: 1;
 }
 
 .head .head_nav {
@@ -44,7 +51,7 @@ nav ul.nav {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    width: calc(100% + 170px);
+    width: calc(100% + 152px);
     padding: 10px;
     background: #f26f21;
     border-radius: 50px;
@@ -61,6 +68,29 @@ nav ul.nav li {
 nav ul.nav li a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul.nav li a:after{
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+nav ul.nav li a:hover:after,
+nav ul.nav li a:focus:after {
+    width: 100%;
 }
 
 .head h1 {
