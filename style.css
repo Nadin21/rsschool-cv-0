@@ -8,8 +8,8 @@ body{
 .head {
     display: grid;
     grid-template-areas: 
-    "img nav nav"
-    "img h1 h1";
+    "img nav nav nav"
+    "img h1 h1 h1";
     padding-top: 20px;
 }
 .head .avatar{
@@ -19,7 +19,7 @@ body{
     grid-area: nav;
     position: relative;
 }
-.head h1{
+.head .name{
     grid-area: h1;
 }
 .avatar .img_avatar{
@@ -39,7 +39,7 @@ nav ul.nav {
     justify-content: flex-end;
     width: calc(100% + 170px);
     padding: 10px;
-    background: #db631c;
+    background: #f26f21;
     border-radius: 50px;
     position: absolute;
     left: -170px;
@@ -55,9 +55,9 @@ nav ul.nav li a{
 }
 .head h1{
     padding:10px;
-    font-size: 24px;
+    font-size: 26px;
     color:#fff;
-    background-color: #db631c;
+    background-color: #f26f21;
     border-radius: 50px;
     position: relative;
     left: -77px;
@@ -73,4 +73,26 @@ nav ul.nav li a{
 .info_container main{
     width: 70%;
 }
+.info_container .left_column{
+    padding: 20px;
+    border-left: 2px solid #f26f21;
+    border-right: 2px solid #f26f21;
+    border-image: linear-gradient(to bottom, #fdf8f4 , #f26f21);
+    border-image-slice: 1;
+    background: linear-gradient(to bottom, #fff 20%, #e5a273 60%, #f26f21 80%);
+}
+.left_column h2{
+    font-size: 24px;
+    color: #f26f21;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 40px 0 30px;
+    border: 2px solid;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    left: -22px;
+}
+ 
 
