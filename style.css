@@ -392,6 +392,10 @@ nav ul.nav li a:focus:after {
     opacity: 1;
 }
 
+.head_nav_burger {
+    display: none;
+}
+
 @media (max-width: 840px) {
     .head {
         grid-template-areas:
@@ -402,7 +406,7 @@ nav ul.nav li a:focus:after {
     }
 
     nav ul.nav {
-        width: calc(100% - 18px);
+        width: auto;
         border-radius: 0;
         position: static;
         margin-top: 0;
@@ -426,7 +430,7 @@ nav ul.nav li a:focus:after {
     .main_content {
         border: none;
         height: auto;
-        padding:20px
+        padding: 20px
     }
 
     .info_container .left_column {
@@ -439,7 +443,7 @@ nav ul.nav li a:focus:after {
         padding-bottom: 0;
     }
 
-    .left_column h2{
+    .left_column h2 {
         font-size: 24px;
         color: #f26f21;
         margin: 40px 0 30px;
@@ -463,5 +467,99 @@ nav ul.nav li a:focus:after {
 
     .left_column .list_contacts {
         padding-left: 5px;
+    }
+}
+
+@media (max-width:639px) {
+    .head_nav_burger {
+        display: block;
+        background-color: #f26f21;
+        height: 39px;
+        position: relative;
+        width: 44px;
+        left: auto;
+        right: 0;
+        z-index: 10;
+    }
+
+    .head_nav_burger span,
+    .head_nav_burger:after,
+    .head_nav_burger:before {
+        height: 3px;
+        width: 80%;
+        position: absolute;
+        background: #fff;
+        margin: 0 auto;
+        left: 5px;
+        transition: 0.5s;
+    }
+
+    .head_nav_burger span {
+        top: 18px;
+    }
+
+    .head_nav_burger:after,
+    .head_nav_burger:before {
+        content: '';
+    }
+
+    .head_nav_burger:after {
+        bottom: 7px;
+    }
+
+    .head_nav_burger:before {
+        top: 7px;
+    }
+
+    .head {
+        display: block;
+    }
+
+    .head .head_nav {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        background: #f26f21;
+    }
+
+    nav ul.nav {
+        display: block;
+        top: -100%;
+        padding: 0;
+        margin-bottom: 0;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        width: 100%;
+        transition: all 0.7s ease 0s;
+    }
+
+    .open_menu ul.nav{
+       top: 39px;
+    }
+
+    nav ul.nav li {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid #fff;
+    }
+
+    nav ul.nav li:last-child {
+        border-bottom: 1px solid #fff;
+    }
+
+    .head_nav_burger.open span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    .head_nav_burger.open:before {
+        transform: rotate(45deg);
+        top: 18px;
+    }
+    .head_nav_burger.open:after {
+        transform: rotate(-45deg);
+        bottom: 18px;
     }
 }

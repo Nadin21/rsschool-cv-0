@@ -20,4 +20,8 @@ $(document).ready(function () {
         }, 800);
         return false;
     });
+    $('.head_nav_burger').click(function(){
+        $(this).toggleClass('open');
+        $('.head_nav').toggleClass('open_menu');
+    });
 });
