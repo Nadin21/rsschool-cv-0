@@ -574,3 +574,9 @@ nav ul.nav li a:focus:after {
         border-bottom-left-radius: 0;
     }
 }
+
+@media (max-width:360px){
+    .footer_block{
+        padding: 10px;
+    }
+}
