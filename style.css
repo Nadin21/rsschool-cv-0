@@ -562,4 +562,15 @@ nav ul.nav li a:focus:after {
         transform: rotate(-45deg);
         bottom: 18px;
     }
+
+    .head .avatar {
+        padding-top: 54px;
+    }
+
+    .head h1 {
+        left: 0px;
+        width: calc(100% - 40px);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 }
